@@ -1,0 +1,98 @@
+/* Added class=skip to my skip to main link in the HTML template within python file */
+a.skip {
+    top: -40px;
+    position: absolute 
+}
+   
+a.skip:focus {
+    top: 20px;
+    z-index: 2;
+    background-color: #F15152;
+    color: aliceblue;
+    font-size: x-large;
+    font-style: italic;
+}
+
+/* Creating a clear navigation bar, responds to users selections to clearly indicate clickable options */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: #304C89 solid 3px; /* discovered border-bottom when flipping through options on inspect element */
+    
+}
+
+nav li {
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #304C89;
+}
+
+nav li:hover a {
+    background-color: #F15152;
+    color: aliceblue;
+    font-size: x-large;
+    font-style: italic;
+}
+    
+
+/* styling the background */
+html {
+    background-color: #ebeff2;
+}
+
+
+/* Styling the image */
+img {
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    border: 5px #304C89 solid;
+    width: 30%;
+}
+
+/* Changing up the fonts */
+h1, h2, th {
+    color: #304C89;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td, address, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-right: #304C89 solid .25px;
+}
+
+td a, footer a {
+    text-decoration: none;
+    color: #304C89;
+}
+
+td a:hover, footer a:hover {
+    background-color: #F15152;
+    color: aliceblue;
+    font-style: italic;
+}
+
+tr:nth-child(2n) {
+    background: white;
+}
+
+tr:hover {
+    font-size: x-large;
+    background-color: yellow;
+}
+
+/* Passes both Wave and aXe */
